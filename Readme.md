@@ -1,14 +1,17 @@
 # Supermarket dataset problem
 
+Python code for the problem
+[source code](https://github.com/vjib/supermarket_data/blob/master/Supermarket_Data.ipynb)
+
 #### 1) What are interesting business questions? Why are the chosen questions important to be explored?
 
-In the business perspective, we would like to form the question likes **"How can we boost more revenue to supermarket using these transactions data?"** as the goal of the business, in this case supermarket, is to maximize profit as much as possible. So the question should serve the need of the business.
+In the business perspective, we would like to form the question likes **"How can we boost more revenue to supermarket using given transactions data?"** as the goal of the business, in this case supermarket, is to maximize profit as much as possible. So the question should serve the need of the business.
 
 #### 2) What analytics techniques, reports, or dashboards should be used to help solve the selected problems? Please walk us through the process in which you scrutinize the problem. Show us some results or insights.
 
 We apply recommender system to solve the supermarket need. The technique we use is called **"user-based collaborative filtering"** or we recommend the products using the assumption that the customer have the similar behaviour of buying the relevant products. For example, we recommend the bag of ice to customer who buy beer because ,in the past ,most customers are likely to buy the bag of ice with beer.
 
-We generate the vector of product each customer buy and we have to find the most similar vector that fit each customer by finding one with the smallest angle indicating that the pair of customers are likele to buy the same products. The results of implementing the model is shown in the url given above.
+We generate the vector of product each customer buy and we compute the similarity between each vectors which are the pair of customers are likely to buy the same products. The results of implementing the model is shown in the url given above.
 
 #### 3) How data are prepared or processed? Show us an interesting way to transform these data into insights
 
